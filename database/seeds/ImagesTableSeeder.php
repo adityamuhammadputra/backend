@@ -21,7 +21,7 @@ class ImagesTableSeeder extends Seeder
                 'portofolio_id' => 1,
                 'title' => 'Title dari portopolio 1',
                 'desc' => 'Title dari portopolio 1',
-                'temp' => '/uploads/BPK/Manpro/Capture.png'
+                'temp' => '/uploads/BPK/Manpro/Capture.PNG'
             ],
             [
                 'id' => 2,
@@ -29,7 +29,7 @@ class ImagesTableSeeder extends Seeder
                 'portofolio_id' => 2,
                 'title' => 'Title2 dari portopolio 2',
                 'desc' => 'Title2 dari portopolio 2',
-                'temp' => '/uploads/BPN-Kabbogor/SKSK/1.png'
+                'temp' => '/uploads/BPN-Kabbogor/SKSK/1.PNG'
             ],
             [
                 'id' => 3,
@@ -37,7 +37,7 @@ class ImagesTableSeeder extends Seeder
                 'portofolio_id' => 3,
                 'title' => 'Title2 dari portopolio 2',
                 'desc' => 'Title2 dari portopolio 2',
-                'temp' => '/uploads/PNB/capture2.png'
+                'temp' => '/uploads/PNB/Capture2.PNG'
             ]
         ];
 
