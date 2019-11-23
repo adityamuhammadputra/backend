@@ -12,7 +12,7 @@ class ImagesTableSeeder extends Seeder
      */
     public function run()
     {
-        // Image::truncate();
+        Image::truncate();
 
         $images = [
             [

@@ -14,7 +14,7 @@ class PortofolioTableSeeder extends Seeder
     {
         // Portofolio::truncate();
 
-        // DB::table('portofolios')->delete();
+        DB::table('portofolios')->delete();
 
 
         $data = [
