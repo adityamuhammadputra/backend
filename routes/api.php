@@ -25,6 +25,7 @@ Route::group(['prefix' => 'v1'], function () {
     // Route::get('todos/{id}/edit', 'TodoController@edit');
     // Route::delete('todos/{id}', 'TodoController@destroy');
 
+    Route::resource('home', 'HomeController')->except('create');
     Route::resource('portofolio', 'PortofolioController')->except('create');
     Route::resource('images', 'ImagesController')->except('create');
 
