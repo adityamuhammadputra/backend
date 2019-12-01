@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Resources\Portofolio as PortofolioResource;
+use App\Http\Resources\PortofolioResource;
 
 use App\Portofolio;
 
@@ -11,9 +11,13 @@ use App\Portofolio;
 class PortofolioController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        return PortofolioResource::collection(Portofolio::paginate(10));
+        if($request->admin){
+            return PortofolioResource::collection(Portofolio::paginate(10));
+        }
+        // return Portofolio::with('imageFitst')->get();
+        return PortofolioResource::collection(Portofolio::get());
     }
 
     public function store(Request $request)

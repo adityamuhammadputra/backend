@@ -4,9 +4,9 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-use App\Http\Resources\Images as ImagesResource;
+use App\Http\Resources\ImagesResource;
 
-class Portofolio extends JsonResource
+class PortofolioResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -21,7 +21,8 @@ class Portofolio extends JsonResource
             'title' => $this->title,
             'desc' => $this->desc,
             'updated_at' => $this->updated_at,
-            'images' => ImagesResource::collection($this->images)
+            'images' => ImagesResource::collection($this->images),
+            'image_first' => new ImagesResource($this->imageFitst)
         ];
     }
 }
